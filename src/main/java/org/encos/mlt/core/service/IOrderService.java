@@ -1,6 +1,6 @@
-package org.encos.mlt.service;
+package org.encos.mlt.core.service;
 
-import org.encos.mlt.dto.OrderDto;
+import org.encos.mlt.core.dto.OrderDto;
 
 import java.util.List;
 

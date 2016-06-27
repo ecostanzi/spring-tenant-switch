@@ -1,7 +1,7 @@
-package org.encos.customer1.mlt.service;
+package org.encos.mlt.customer1.service;
 
-import org.encos.mlt.dto.OrderDto;
-import org.encos.mlt.service.IOrderService;
+import org.encos.mlt.core.dto.OrderDto;
+import org.encos.mlt.core.service.IOrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Primary;

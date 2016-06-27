@@ -1,7 +1,7 @@
-package org.encos.mlt.controller;
+package org.encos.mlt.core.controller;
 
-import org.encos.mlt.dto.OrderDto;
-import org.encos.mlt.service.IOrderService;
+import org.encos.mlt.core.service.IOrderService;
+import org.encos.mlt.core.dto.OrderDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

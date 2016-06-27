@@ -1,4 +1,4 @@
-package org.encos.mlt.conf;
+package org.encos.mlt.core.conf;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
