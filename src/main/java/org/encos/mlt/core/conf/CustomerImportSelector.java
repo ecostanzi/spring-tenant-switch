@@ -4,6 +4,7 @@ import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotationMetadata;
+import org.springframework.util.StringUtils;
 
 /**
  * @author Enrico Costanzi
@@ -18,7 +19,12 @@ class CustomerImportSelector implements ImportSelector, EnvironmentAware {
     @Override
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
         String customer = env.getProperty("mlt.customer");
-        return new String[] { String.format(PACKAGE, customer) + "." + CONFIG_CLASS };
+        if(!StringUtils.isEmpty(customer)){
+            return new String[] { String.format(PACKAGE, customer) + "." + CONFIG_CLASS };
+        } else{
+            return new String[]{};
+        }
+
     }
 
     @Override

@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.encos.examples</groupId>
-	<artifactId>multitenancy</artifactId>
+	<artifactId>mlt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>multitenancy</name>
-	<description>Demo project for Spring Boot</description>
+	<description>One property, multiple customers</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

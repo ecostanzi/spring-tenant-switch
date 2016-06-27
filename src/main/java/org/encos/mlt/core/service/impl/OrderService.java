@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -19,6 +20,8 @@ public class OrderService implements IOrderService {
     @Override
     public List<OrderDto> getOrders() {
         logger.info("Hello I'm the default order service");
-        return null;
+        return Arrays.asList(
+                new OrderDto(1000L, "Default")
+        );
     }
 }

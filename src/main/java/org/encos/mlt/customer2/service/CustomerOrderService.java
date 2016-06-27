@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,7 +21,8 @@ public class CustomerOrderService implements IOrderService{
 
     @Override
     public List<OrderDto> getOrders() {
-        logger.info("Hello I'm the customer 2 order service!");
-        return null;
+        logger.info("Hello I'm the customer 1 order service!");
+        return Arrays.asList(
+                new OrderDto(1000L, "Customer 2"));
     }
 }
