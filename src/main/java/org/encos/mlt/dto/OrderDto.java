@@ -1,4 +1,4 @@
-package org.encos.examples.dto;
+package org.encos.mlt.dto;
 
 /**
  * @author Enrico Costanzi
