@@ -3,6 +3,7 @@ Single App, multiple customers customizations.
 
 You sometimes need to override some default implementations due to customer needs. One way to achieve it using spring boot is a combination of annotations.
 
+### Try it out
 Checkout the project and change the property you find in the application.properties.
 
 ```
